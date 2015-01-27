@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/playeroneplus"
+        android:layout_below="@+id/playerone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/playeroneminus"
+        android:layout_alignBottom="@+id/playeroneplus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:id="@+id/playeroneplusfive"
+        android:layout_alignTop="@+id/playeroneplus"
+        android:layout_toRightOf="@+id/playeroneplus"
+        android:layout_toEndOf="@+id/playeroneplus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:id="@+id/playeroneminusfive"
+        android:layout_alignTop="@+id/playeroneminus"
+        android:layout_toLeftOf="@+id/playeroneminus"
+        android:layout_toStartOf="@+id/playeroneminus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player 1:"
+        android:id="@+id/playerone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="20"
+        android:id="@+id/playeronelifecount"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/playeroneminus"
+        android:layout_alignEnd="@+id/playeroneminus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/playertwoplus"
+        android:layout_below="@+id/playertwo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:id="@+id/playertwoplusfive"
+        android:layout_alignBottom="@+id/playertwoplus"
+        android:layout_alignRight="@+id/playeroneplusfive"
+        android:layout_alignEnd="@+id/playeroneplusfive" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:id="@+id/playertwominusfive"
+        android:layout_alignBottom="@+id/playertwoplusfive"
+        android:layout_alignLeft="@+id/playeroneminusfive"
+        android:layout_alignStart="@+id/playeroneminusfive" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/playertwominus"
+        android:layout_alignBottom="@+id/playertwominusfive"
+        android:layout_alignRight="@+id/playeroneminus"
+        android:layout_alignEnd="@+id/playeroneminus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player 2:"
+        android:id="@+id/playertwo"
+        android:layout_below="@+id/playeroneplus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="20"
+        android:id="@+id/playertwolifecount"
+        android:layout_above="@+id/playertwominus"
+        android:layout_alignRight="@+id/playertwominus"
+        android:layout_alignEnd="@+id/playertwominus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/playerthreeplus"
+        android:layout_below="@+id/playerthree"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:id="@+id/playerthreeplusfive"
+        android:layout_alignBottom="@+id/playerthreeplus"
+        android:layout_alignRight="@+id/playertwoplusfive"
+        android:layout_alignEnd="@+id/playertwoplusfive" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:id="@+id/playerthreeminusfive"
+        android:layout_alignBottom="@+id/playerthreeplusfive"
+        android:layout_alignLeft="@+id/playertwominusfive"
+        android:layout_alignStart="@+id/playertwominusfive" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/playerthreeminus"
+        android:layout_alignBottom="@+id/playerthreeminusfive"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player 3:"
+        android:id="@+id/playerthree"
+        android:layout_below="@+id/playertwoplus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="20"
+        android:id="@+id/playerthreelifecount"
+        android:layout_below="@+id/playertwominus"
+        android:layout_alignRight="@+id/playertwominus"
+        android:layout_alignEnd="@+id/playertwominus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player 4:"
+        android:id="@+id/playerfour"
+        android:layout_below="@+id/playerthreeplus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="20"
+        android:id="@+id/playerfourlifecount"
+        android:layout_below="@+id/playerthreeminus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/playerfourplus"
+        android:layout_below="@+id/playerfour"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:id="@+id/playerfourplusfive"
+        android:layout_alignBottom="@+id/playerfourplus"
+        android:layout_alignLeft="@+id/playerthreeplusfive"
+        android:layout_alignStart="@+id/playerthreeplusfive" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:id="@+id/playerfourminusfive"
+        android:layout_alignBottom="@+id/playerfourplusfive"
+        android:layout_alignRight="@+id/playerthreeminusfive"
+        android:layout_alignEnd="@+id/playerthreeminusfive" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/playerfourminus"
+        android:layout_alignBottom="@+id/playerfourminusfive"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
